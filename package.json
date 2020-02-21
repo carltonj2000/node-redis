@@ -1,0 +1,23 @@
+{
+  "name": "node-redis",
+  "version": "1.0.0",
+  "description": "## History",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "redis:up": "docker-compose up",
+    "redis:down": "docker-compose down",
+    "redis:cli": "docker exec -it node-redis_nodeCache_1 redis-cli"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
